@@ -8,7 +8,5 @@ AND LOG_DATE <= TO_DATE('21.01.2019 23:59:59', 'DD.MM.YYYY HH24:MI:SS')  --TRUNC
 ORDER BY log_date DESC
 ;
 
-
-
 SELECT * FROM GV$SESSIONS --вьюха сессий
 ;
