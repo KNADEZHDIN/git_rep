@@ -9,4 +9,8 @@ ORDER BY log_date DESC
 ;
 
 SELECT * FROM GV$SESSIONS --вьюха сессий
+<<<<<<< HEAD
 ;--инфо
+=======
+;--info
+>>>>>>> master
