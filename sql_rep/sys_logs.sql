@@ -9,9 +9,6 @@ ORDER BY log_date DESC
 ;
 
 
-<<<<<<< HEAD
+
 SELECT * FROM GV$SESSIONS --вьюха сессий
-=======
-SELECT * FROM GV$SESSIONS --view for sessions
->>>>>>> master
 ;
