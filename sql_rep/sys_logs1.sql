@@ -1,4 +1,4 @@
-SELECT * 
+SELECT * -- all
 FROM Sys_Logs
 WHERE 1=1
 AND process = 'BIS.FMC_MAKE_CHARGE'
