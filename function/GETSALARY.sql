@@ -1,0 +1,16 @@
+CREATE OR REPLACE FUNCTION GETSALARY(EMID IN NUMBER) RETURN NUMBER
+IS
+
+V_SALARY number(38);
+
+BEGIN
+
+SELECT em.salary into V_SALARY FROM hr.employees em where em.employee_id = EMID;
+
+
+EXCEPTION
+  WHEN no_data_found THEN
+    DBMS_OUTPUT.PUT_LINE('-999');
+	RETURN(V_SALARY);
+END GETSALARY;
+/
