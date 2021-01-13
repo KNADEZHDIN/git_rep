@@ -5,8 +5,10 @@ V_SALARY number(38);
 
 BEGIN
 
-SELECT em.salary into V_SALARY FROM hr.employees em where em.employee_id = EMID;
-
+SELECT em.salary 
+into V_SALARY 
+FROM hr.employees em 
+where em.employee_id = EMID;
 
 EXCEPTION
   WHEN no_data_found THEN
